@@ -28,10 +28,9 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "https://lucky-syrniki-8dcde0.netlify.app",
-        credentials: true,
+      origin: "https://67dd9c1d2227d6008add2002--coruscating-nougat-597542.netlify.app",
     })
-);
+  );
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
