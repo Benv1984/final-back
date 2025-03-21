@@ -9,7 +9,7 @@ import userRoutes from './routes/user.routes.js';
 import postRoutes from './routes/post.routes.js';
 import notificationRoutes from './routes/notification.routes.js';
 
-//import connectMongoDB from './db/connectMongoDb.js';
+import connectMongoDB from './connectMongoDB.js';
 
 dotenv.config();
 
@@ -40,5 +40,5 @@ app.use("/api/notifications", notificationRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
- //   connectMongoDB();
+    connectMongoDB();
 })
