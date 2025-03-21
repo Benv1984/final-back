@@ -29,6 +29,9 @@ app.use(cookieParser());
 app.use(
     cors({
       origin: "https://67dd9c1d2227d6008add2002--coruscating-nougat-597542.netlify.app",
+      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Ensure OPTIONS is allowed
+      allowedHeaders: ["Content-Type", "Authorization"], // Adjust if your API needs other headers
+      credentials: true,
     })
   );
 
