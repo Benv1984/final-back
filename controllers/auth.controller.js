@@ -98,9 +98,9 @@ export const logout = async (req, res) => {
 
 export const getMe = async (req, res) => {
 	try {
-		if (!req.user) {
-			return res.status(401).json({ error: "Unauthorized" });
-		}
+		// if (!req.user) {
+		// 	return res.status(401).json({ error: "Unauthorized" });
+		// }
 
 		const user = await User.findById(req.user._id).select("-password");
 
