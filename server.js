@@ -28,7 +28,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://lucky-syrniki-8dcde0.netlify.app",
         credentials: true,
     })
 );
